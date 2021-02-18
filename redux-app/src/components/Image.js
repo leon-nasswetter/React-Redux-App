@@ -22,9 +22,10 @@ const Image = (props) => {
     }
     return (
         <>
-            <img src={image}></img>
-            <br/>
-            <button onClick={handleClick}>Get new image</button>
+            <div className="dogContainer">
+                <img className="fade-in" src={image}></img>
+            </div>
+            <a className="button" onClick={handleClick}>Get new image</a>
         </>
     )
 }
